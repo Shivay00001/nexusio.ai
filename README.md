@@ -24,24 +24,53 @@ Whether you're developing AI-driven automation tools, sophisticated machine lear
 
 ## 🛠️ Getting Started
 
-### Installation
+This is a full-stack application. You will need to run the backend and frontend separately in two different terminal windows.
 
-Clone the repository and install the required dependencies:
+### 1️⃣ Start the Backend (FastAPI Server)
 
+First, clone the repository:
 ```bash
 git clone https://github.com/Shivay00001/nexusio.ai.git
 cd nexusio.ai
+```
+
+Then, set up the backend:
+```bash
+# Navigate to the backend directory
+cd backend
+
+# Create and activate a virtual environment
+python -m venv venv
+# On Windows:
+.\venv\Scripts\activate
+# On Mac/Linux:
+# source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Start the server
+uvicorn main:app --reload --port 8000
+```
+*The backend API will run at `http://localhost:8000`.*
+
+### 2️⃣ Start the Frontend (Vite + React)
+
+Open a new terminal window and run:
+
+```bash
+# Navigate to the frontend directory
+cd frontend
+
+# Install dependencies
 npm install
+
+# Start the dev server
+npm run dev
 ```
+*The frontend UI will be available at `http://localhost:5173` (or the URL shown in your terminal).*
 
-### Quick Start
-
-```javascript
-import { NexusAgent } from 'nexusio.ai';
-
-const agent = new NexusAgent({ name: 'Alpha' });
-agent.execute('Analyze the latest market trends');
-```
+> **Note:** Don't forget to configure your AI provider API keys in the `backend/.env` file (you can copy `.env.example` as a starting point).
 
 ## 📈 Use Cases
 
