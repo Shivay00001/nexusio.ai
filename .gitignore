@@ -12,3 +12,7 @@ build/
 .vscode/
 *.log
 node_modules/
+
+# SQLite transient files
+*.db-shm
+*.db-wal
