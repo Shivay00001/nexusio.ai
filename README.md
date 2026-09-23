@@ -37,20 +37,12 @@ cd nexusio.ai
 Then, set up the backend:
 ```bash
 # Navigate to the backend directory
-cd backend
-
-# Create and activate a virtual environment
-python -m venv venv
-# On Windows:
-.\venv\Scripts\activate
-# On Mac/Linux:
-# source venv/bin/activate
-
+# From the repository root (not inside backend/):
 # Install dependencies
-pip install -r requirements.txt
+pip install -r backend/requirements.txt
 
 # Start the server
-uvicorn main:app --reload --port 8000
+uvicorn backend.main:app --port 8000
 ```
 *The backend API will run at `http://localhost:8000`.*
 
