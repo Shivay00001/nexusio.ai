@@ -10,6 +10,8 @@
 
 ## 🚀 Overview
 
+Built by [VisionQuantech](https://visionquantech.com) — AI agents, apps & tools for small businesses.
+
 **NexusIO.ai** is an advanced, scalable framework for building, orchestrating, and deploying autonomous Artificial Intelligence (AI) agents. Designed to seamlessly integrate with modern data workflows, NexusIO.ai empowers developers to construct high-performance decision-making systems capable of complex reasoning, continuous learning, and multi-agent collaboration.
 
 Whether you're developing AI-driven automation tools, sophisticated machine learning models, or intelligent backend systems, NexusIO.ai provides the robust architecture you need.
